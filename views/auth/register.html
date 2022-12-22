@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{template "general/header"}}
+</head>
+
+<body class="font-poppins">
+  <div class="flex justify-center items-center w-screen h-screen">
+    <div class="hidden lg:flex items-center w-1/2 h-screen p-8 bg-gradient-to-tr from-emerald-400 via-cyan-400 to-sky-400">
+      <div class="mb-16">
+        <h1 class="font-bold text-7xl text-white">KANBAN</h1>
+        <h1 class="font-bold text-7xl text-white">BOARD</h1>
+        <h2 class="font-bold text-3xl text-white">Manage Your Tasks Easily!</h2>
+      </div>
+    </div>
+    <section class="w-full lg:w-2/3">
+      <form 
+        method="post" 
+        action="/register/process" 
+        class="w-2/3 mx-auto p-8">
+        <h1 class="font-bold text-3xl text-center mb-8">Register</h1>
+        <label 
+          for="fullname" 
+          class="block font-semibold my-2">Fullname</label>
+        <input 
+          name="fullname" 
+          type="text" 
+          placeholder="fullname" 
+          class="w-full px-2 py-1 border-2 rounded-md">
+        <label 
+          for="email" 
+          class="block font-semibold my-2">Email</label>
+        <input 
+          name="email" 
+          type="text" 
+          placeholder="yourname@example.com" 
+          class="w-full px-2 py-1 border-2 rounded-md">
+        <label 
+          for="password" 
+          class="block font-semibold my-2">Password</label>
+        <input 
+          name="password" 
+          type="password" 
+          placeholder="password" 
+          class="w-full px-2 py-1 border-2 rounded-md">
+
+        <div class="flex justify-between items-center mt-8">
+          <p class="text-sm">Already have an account?
+            <a href="/login" class="text-sky-500">Login</a>
+          </p>
+          <button type="submit" class="font-semibold text-white px-4 py-2 
+              bg-sky-500 rounded-md">Register</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>
